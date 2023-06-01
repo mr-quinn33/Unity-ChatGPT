@@ -20,16 +20,14 @@ namespace UnityChatGPT.Editor
         private bool showLoadingSpinner;
         private bool showApiKey;
 
-        [MenuItem("Window/Unity ChatGPT/ChatGPT")]
+        [MenuItem("Window/Unity ChatGPT/ChatGPT Editor")]
         public static void ShowWindow()
         {
-            GetWindow(typeof(ChatGPTEditor)).titleContent.text = "ChatGPT";
+            GetWindow(typeof(ChatGPTEditor)).titleContent.text = "ChatGPT Editor";
         }
 
         private void OnGUI()
         {
-            GUILayout.Label(nameof(ChatGPTEditor), EditorStyles.boldLabel);
-
             EditorGUILayout.BeginHorizontal();
             prompt = EditorGUILayout.TextField("Prompt", prompt);
             if (GUILayout.Button("Clear", GUILayout.Width(50)))
