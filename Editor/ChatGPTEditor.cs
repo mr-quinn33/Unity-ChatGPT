@@ -20,10 +20,10 @@ namespace UnityChatGPT.Editor
         private bool showLoadingSpinner;
         private bool showApiKey;
 
-        [MenuItem("Window/ChatGPT Plugin")]
+        [MenuItem("Window/Unity ChatGPT/ChatGPT")]
         public static void ShowWindow()
         {
-            GetWindow(typeof(ChatGPTEditor)).titleContent.text = "ChatGPT Plugin";
+            GetWindow(typeof(ChatGPTEditor)).titleContent.text = "ChatGPT";
         }
 
         private void OnGUI()
