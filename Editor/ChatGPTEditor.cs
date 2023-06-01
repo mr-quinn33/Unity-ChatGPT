@@ -28,6 +28,8 @@ namespace UnityChatGPT.Editor
 
         private void OnGUI()
         {
+            GUILayout.Label(nameof(ChatGPTEditor), EditorStyles.boldLabel);
+
             EditorGUILayout.BeginHorizontal();
             prompt = EditorGUILayout.TextField("Prompt", prompt);
             if (GUILayout.Button("Clear", GUILayout.Width(50)))
